@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- By Sakina Shazleena -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js" ></script>
+</head>
+<body>
+   
+    <a href="file:///C:/XAMP%20FILE/htdocs/profile/Myprofile.html" style="font-size:26px" class="previous">&laquo; My Profile</a>
+    <div class="wrapper">
+        <h2>BMI Calculator</h2><br><br>
+        
+       
+        <div class="input">
+            <label for="name"><strong>Name : </strong></label>
+            <input type="text" placeholder = "Enter your name" id="name" required>
+        </div><br>
+
+        <div class="input">
+            <label for="age"><strong>Age : </strong></label>
+            <input type="number" placeholder = "Enter your age" id="age" required>
+        </div><br>
+
+        <div class="input">
+
+            <label for="gender"><strong>Gender:</strong></label>
+
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>
+            </label>
+
+        </div>
+
+        <div class="input">
+            <label for="datetime" > <strong>Date and Time:</strong></label>
+            <input type="datetime-local" id="datetime" name="datetime">
+        </div><br>
+
+        <div class="input">
+            <label for="categories"><strong>Categories:</strong></label>
+            <select id="categories" name="categories" required>
+            <option value=""disabled selected>Select a categories</option>
+            <option value="Kid">Kid</option>
+            <option value="Teenager">Teenager</option>
+            <option value="Adult">Adult</option>
+            <option value="Others">Others</option>
+            </select>
+        </div><br>
+         
+        <div class="input">
+            <label for="activity"><strong>Activity:</strong></label>
+            <select id="activity" name="activity" required>
+            <option value="" disabled selected>  Enter your activity  </option>
+            <option value="Sedentary">Sedentary : Little or No excersice</option>
+            <option value="Lightly">Lightly : Exercise 1-3 time days/week</option>
+            <option value="Others">Others</option>
+            </select>
+        </div><br>
+
+        <div class="input">
+            <label for="height"><strong>Height : </strong></label>
+            <input type="text" placeholder = "cm" id="height" required>
+            <span id="height_error"></span>
+        </div><br>
+        
+        
+        <div class="input">
+            <label for="weight"><strong>Weight : </strong></label>
+            <input type="text" placeholder = "kg" id="weight" required>
+            <span id="weight_error"></span>
+        </div><br>
+        
+
+
+        <div class="submit">
+            <button id="btn">Calculate</button><br><br>
+            <p id="output"></p>
+
+        </div>
+
+        <div class="result"><br>
+            <p id="demo"></p>
+        </div>
+
+        
+    </div>
+</body>
+</html
